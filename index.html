@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleg Sautenkov - GenAI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2em 0;
+            border-bottom: 1px solid #4caf50;
+            background: #1e1e1e;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #4caf50;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4caf50;
+            margin-top: 1em;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        nav a {
+            color: #4caf50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            border: 1px solid #4caf50;
+            border-radius: 10px;
+            background: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            border-bottom: 1px solid #4caf50;
+            padding-bottom: 0.5em;
+            color: #4caf50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 0.5em 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            border-top: 1px solid #4caf50;
+            margin-top: 2em;
+            background: #1e1e1e;
+        }
+
+        a {
+            color: #4caf50;
+        }
+
+        a:hover {
+            color: #81c784;
+        }
+
+        .uav-animation {
+            position: absolute;
+            top: 108%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .flying-uav {
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            animation: fly 10s linear infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg) translate(100px) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Oleg Sautenkov</h1>
+    <p>GenAI Researcher | Robotics & AI Specialist | Innovator</p>
+    <img src="profile.jpg" alt="Oleg Sautenkov">
+    <div class="uav-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" class="flying-uav">
+        <!-- Central body of the quadcopter -->
+        <rect x="90" y="90" width="60" height="60" fill="#4caf50" />
+
+        <!-- Propellers -->
+        <circle cx="60" cy="60" r="12" fill="#4caf50" />
+        <circle cx="180" cy="60" r="12" fill="#4caf50" />
+        <circle cx="60" cy="180" r="12" fill="#4caf50" />
+        <circle cx="180" cy="180" r="12" fill="#4caf50" />
+
+        <!-- Hollow Propellers -->
+        <circle cx="60" cy="60" r="30" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="180" cy="60" r="30" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="60" cy="180" r="30" fill="none" stroke="white" stroke-width="2" />
+        <circle cx="180" cy="180" r="30" fill="none" stroke="white" stroke-width="2" />
+
+        <!-- Connecting the propellers to the body -->
+        <line x1="90" y1="90" x2="60" y2="60" stroke="#4caf50" stroke-width="4" />
+        <line x1="150" y1="90" x2="180" y2="60" stroke="#4caf50" stroke-width="4" />
+        <line x1="90" y1="150" x2="60" y2="180" stroke="#4caf50" stroke-width="4" />
+        <line x1="150" y1="150" x2="180" y2="180" stroke="#4caf50" stroke-width="4" />
+
+        <!-- Text "GenAI" below -->
+        <text x="120" y="125" font-family="Arial" font-size="60" fill="white" text-anchor="middle" alignment-baseline="middle">AI</text>
+        </svg>
+    </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="https://docs.google.com/document/d/1KX7vcUAtg_vz7hnUFBZNGkydoXVsp7SsezkICUqEXSo/edit?usp=sharing" target="_blank">Full CV</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a second-year PhD student in Robotics at Skoltech, specializing in LLM/VLM agents, UAV mission planning, and Computer Vision. My work integrates AI and robotics to solve complex challenges as TSP and path-planning through the new architectures. </br> Now I'm an Invited Researcher at <a href="https://www.polyu.edu.hk/aae/">AAE Hong Kong Poly</a>. DM to grab a coffee and discuss the robotics projects. </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Invited Researcher</strong>, Hong Kong PolyU, 2025–Present</li>
+            <li><strong>PhD in Information Systems</strong>, Skoltech, 2023–Present</li>
+            <li><strong>MSc in Engineering Systems</strong>, Skoltech, 2019–2022 </li>
+            <li><strong>BSc in Aviation Systems</strong>, Moscow Aviation Institute, 2015–2019</li>
+            <li><strong>Visiting Student</strong>, MIT CSAIL, 2022</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Invited Researcher</strong>, Hong Kong PolyU, 2025–Present</li>
+            <li><strong>Research Assistant</strong>, Skoltech, 2022–2023 </li>
+            <li><strong>Software Intern</strong>, Native Robotics, 2021 </li>
+            <li><strong>Mechanical Engineer</strong>, SmirnovDesign, 2019–2020 </li>
+        </ul>
+    </section>
+
+    <section id="genai_papers">
+        <h2>GenAI Related Papers</h2>
+        <p>Other papers can be found in my Full CV</p>
+        <ul>
+          <li>
+            <strong>UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation.</strong><br/>
+            O. Sautenkov, Y. Yaqoot, A. Lykov, M. A. Mustafa, G. Tadevosyan, 
+            A. Akhmetkazy, M. Altamirano Cabrera, M. Martynov, S. Karaf, and D. Tsetserukou, 
+            in <em>Proc. ACM/IEEE Int. Conf. on Human Robot Interaction (HRI 2025)</em>, 
+            Melbourne, Australia, March 4–6, 2025, in print. 
+            <br/>
+            (Core2023 A, Scopus, WoS, H-index (SJR)=70)<br/>
+            <a href="https://arxiv.org/abs/2501.05014">https://arxiv.org/abs/2501.05014</a><br/>
+            <a href="https://github.com/sautenich/uav-vla">https://github.com/sautenich/uav-vla</a><br/>
+
+            
+          </li>
+            
+        </ul>
+      </section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:oleg.sautenkov@skoltech.ru">oleg.sautenkov[at]skoltech.ru</a></p>
+        <p>GitHub: <a href="https://github.com/Sautenich" target="_blank">github.com/Sautenich</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?hl=ru&user=phIRlIkAAAAJ" target="_blank">scholar.google.com/OlegSautenkov</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Oleg Sautenkov | OS CV</p>
+    </footer>
+</body>
+</html>
